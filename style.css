@@ -1,0 +1,11 @@
+/* CSS style sheet for Sunshine Foods website */
+/* Author: Chien-Ting WENG */
+/* Version: 0.1 */
+/* Date: Jan. 29th, 2014 */
+
+/*
+/* Use normalize.css to clear the default configurations of browsers.
+/* Normalize.css is a project by Nicolas Gallagher, co-created with Jonathan Neal.
+/* More information can be found at http://necolas.github.io/normalize.css/
+*/
+@import "normalize.css";
