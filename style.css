@@ -1,11 +1,75 @@
 /* CSS style sheet for Sunshine Foods website */
-/* Author: Chien-Ting WENG */
-/* Version: 0.1 */
-/* Date: Jan. 29th, 2014 */
+/* 
+	Author: Chien-Ting WENG
+	Version: 0.1
+	Date: Jan. 29th, 2014
+*/
 
 /*
-/* Use normalize.css to clear the default configurations of browsers.
-/* Normalize.css is a project by Nicolas Gallagher, co-created with Jonathan Neal.
-/* More information can be found at http://necolas.github.io/normalize.css/
+	Use normalize.css to clear the default configurations of browsers.
+	Normalize.css is a project by Nicolas Gallagher, co-created with Jonathan Neal.
+	More information can be found at http://necolas.github.io/normalize.css/
 */
+	
 @import "normalize.css";
+
+html {
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Define the size of the page, ie content area */
+body {
+	margin: 0 auto;
+	position: relative;
+	background-color: gray;
+	/* width: 770px; */
+	width: 50em;
+}
+
+/* Display borders of every (block) element to represent the layout */
+body .design_mode {
+	border-color-style: black;
+	border-width: 1px;
+}
+
+/* The style of page */
+div#page {
+	background-color: #fff6a5;
+}
+
+/* The style of language menu */
+nav#language_menu {
+	text-align: right;
+}
+
+nav#language_menu p {
+	margin-top: .2em;
+	margin-right: .2em;
+}
+/* The style of the banner */
+div#banner {
+	width: 38em;
+	margin: 0 auto;
+	background-color: #f56932;
+}
+
+/* The style of hr */
+hr#separator {
+	display: block;
+	height: .8em;
+	background-color: #458969;
+	color: #458969;
+	border: none;
+}
+
+/* The style of section.content */
+section.content {
+	width: 36em;
+	padding-left: 2em;
+	margin: 0 auto;
+	background-color: #f49636;
+	text-align: left;
+}
+
+section#shop_info p {}
