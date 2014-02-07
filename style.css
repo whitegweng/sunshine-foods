@@ -10,7 +10,9 @@
 	Normalize.css is a project by Nicolas Gallagher, co-created with Jonathan Neal.
 	More information can be found at http://necolas.github.io/normalize.css/
 */
-	
+
+/* CSS3 properties are used */
+
 @import "normalize.css";
 
 html {
@@ -22,41 +24,49 @@ html {
 body {
 	margin: 0 auto;
 	position: relative;
-	background-color: gray;
+	/* background-color: gray; */
 	/* width: 770px; */
 	width: 50em;
 }
 
 /* Display borders of every (block) element to represent the layout */
-body .design_mode {
-	border-color-style: black;
-	border-width: 1px;
+body.design_mode {
+/*	border: 1px solid black; */
 }
 
 /* The style of page */
 div#page {
 	background-color: #fff6a5;
+	border: .1em solid #fff6a5;
 }
 
 /* The style of language menu */
-nav#language_menu {
+ul#language_menu {
+	/* border: 1px solid red; */
+	margin: .4em .3em 0 0;
 	text-align: right;
 }
 
-nav#language_menu p {
-	margin-top: .2em;
-	margin-right: .2em;
+#language_menu li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: .5em;
 }
+
 /* The style of the banner */
 div#banner {
 	width: 38em;
 	margin: 0 auto;
+	margin-top: 3em;
 	background-color: #f56932;
+	border: .1em solid #f56932;
+	color: #fefb5b;
 }
 
 /* The style of hr */
 hr#separator {
 	display: block;
+	margin: 0 auto;
 	height: .8em;
 	background-color: #458969;
 	color: #458969;
@@ -65,11 +75,32 @@ hr#separator {
 
 /* The style of section.content */
 section.content {
-	width: 36em;
-	padding-left: 2em;
+	overflow: hidden;
+	text-align: left;
+	width: 38em;
 	margin: 0 auto;
 	background-color: #f49636;
-	text-align: left;
 }
 
-section#shop_info p {}
+div#shop_info {
+	float: left;
+}
+
+div#shop_info p{
+	margin-left: 2em;
+}
+
+div#map {
+	float: right;
+	margin-right: 1.5em;
+/*	background-color: #a2d3a2; */
+}
+
+section#special_offer {
+	clear: both;
+	margin-top: 1.5em;
+}
+
+section#special_offer p, section#special_offer h3 {
+	margin-left: 2em;
+}
