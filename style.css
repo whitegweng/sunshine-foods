@@ -11,9 +11,14 @@
 	More information can be found at http://necolas.github.io/normalize.css/
 */
 
-/* CSS3 properties are used */
-
 @import "normalize.css";
+
+/* Google fonts */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+/* CSS3 properties are used */
 
 html {
 	text-align: center;
@@ -53,20 +58,35 @@ ul#language_menu {
 	margin-right: .5em;
 }
 
+#language_menu li a.selected { display: none; }
+
 /* The style of the banner */
 div#banner {
 	width: 38em;
+	height: 34em;
 	margin: 0 auto;
-	margin-top: 3em;
+	margin-top: 0;
+	overflow: hidden;
 	background-color: #f56932;
 	border: .1em solid #f56932;
+	border-radius: 50% 50% 0 0;
+	-moz-border-radius: 50% 50% 0 0;
+	-webkit-border-radius: 50% 50% 0 0;
 	color: #fefb5b;
 }
 
+div#banner h1 {
+	margin-top: 1.5em;
+	margin-bottom: 0;
+}
+
+div#banner h3 {
+	margin-top: -.2em;
+}
 /* The style of hr */
 hr#separator {
 	display: block;
-	margin: 0 auto;
+	margin: -18em 0 auto;
 	height: .8em;
 	background-color: #458969;
 	color: #458969;
@@ -76,31 +96,74 @@ hr#separator {
 /* The style of section.content */
 section.content {
 	overflow: hidden;
-	text-align: left;
+	height: auto;
+ 	text-align: center;
 	width: 38em;
 	margin: 0 auto;
+	margin-bottom: 1.5em;
+	border: .1em solid #f49636;
 	background-color: #f49636;
+	color: rgb(53, 8, 0);
 }
 
 div#shop_info {
 	float: left;
+	width: 19em;
+	height: 20em;
 }
 
-div#shop_info p{
-	margin-left: 2em;
-}
+div#shop_info h3 { margin-top: 2.5em; }
+div#shop_info p { margin-top: 1.5em; }
 
 div#map {
 	float: right;
-	margin-right: 1.5em;
-/*	background-color: #a2d3a2; */
-}
-
-section#special_offer {
-	clear: both;
 	margin-top: 1.5em;
+	width: 19em;
+	height: 20em;
 }
 
-section#special_offer p, section#special_offer h3 {
-	margin-left: 2em;
+article.news {
+	margin-top: 1.7em;
+}
+
+h2#updates { margin-left: 2em; }
+
+aside.left_side {
+	float: left;
+	width: 19em;
+	text-align: center;
+}
+
+aside.left_side img{
+	width: 15em;
+	height: auto;
+	margin: .5em;
+}
+
+div.text_right {
+	float: right;
+	width: 19em;
+	margin-top: 1.5em;
+	text-align: left;
+}
+
+div.text_right p { margin-right: 1.5em;}
+
+/* Typesettings */
+
+div#banner h1 {
+	font-size: 400%;
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 300;
+}
+
+div#banner h3 {
+	font-size: 200%;
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 300;
+}
+
+section.content, #language_menu li {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
 }
